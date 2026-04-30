@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    try {
+        throw 10;
+    } catch (int e) {
+        cout << "Integer exception";
+    } catch (...) {
+        cout << "Unknown exception";
+    }
+    return 0;
+}
