@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int x;
+    A(int a) { x = a; }
+    A operator+(A o) { return A(x + o.x); }
+};
+
+int main() {
+    cout << (A(2) + A(3)).x;
+}
